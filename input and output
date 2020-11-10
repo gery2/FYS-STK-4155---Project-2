@@ -1,0 +1,113 @@
+PS C:\python\project2> python 1acrossmini.py
+100%|██████████████████████████████████████████████████████████████████████████████████| 18/18 [17:30<00:00, 58.35s/it]
+2.3299518105153718e-09
+optimal train batch_size = 9.0
+optimal train n_epochs = 55.0
+optimal test batch_size = 9.0
+optimal test n_epochs = 55.0
+--------------------------------------
+MSE_train =  111.81346045275339
+MSE_test =  21.512207182326726
+
+PS C:\python\project2> python 1aplus.py
+optimal train batch_size = 5.0
+optimal train n_epochs = 51.0
+optimal test batch_size = 5.0
+optimal test n_epochs = 51.0
+--------------------------------------
+MSE_train =  0.008742296555417788
+MSE_test =  0.006330199650607771
+
+PS C:\python\project2> python .\1bcMLPReg2.py
+100%|█████████████████████████████████████████████████████████████████████████████████████████| 20/20 [01:24<00:00,  4.24s/it]
+optimal score =  0.9670078678439595
+optimal learning rate =  0.0545559478116852
+optimal lambda = 1e-10
+
+PS C:\python\project2> python .\1cWorkingNewMse.py
+Number of training images: 320
+Number of test images: 80
+predictions = (n_inputs) = (320, 1)
+prediction for image 0: [3.54291735]
+correct label for image 0: 0.7857906119686391
+Old MSE on training data: 2915.651640546522
+Old R2 on training data: -30310.805928311907
+100%|█████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:38<00:00,  1.30s/it]
+New MSE on training data:  34.08069243500943
+New R2 on training data:  -48117116.8297108
+optimal learning rate =  0.000630957344480193
+optimal lambda = 0.041753189365604
+
+PS C:\python\project2> python .\1dMLPClass2.py
+inputs = (n_inputs, pixel_width, pixel_height) = (1797, 8, 8)
+labels = (n_inputs) = (1797,)
+X = (n_inputs, n_features) = (1797, 64)
+ 70%|██████████████████████████████████████████████████████████                         | 7/10 [03:33<02:18, 46.08s/it]C
+:\Users\Viggo\Anaconda3\lib\site-packages\sklearn\neural_network\multilayer_perceptron.py:562: ConvergenceWarning: Stoch
+astic Optimizer: Maximum iterations (5000) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+ 80%|██████████████████████████████████████████████████████████████████▍                | 8/10 [06:12<02:39, 79.76s/it]C
+:\Users\Viggo\Anaconda3\lib\site-packages\sklearn\neural_network\multilayer_perceptron.py:562: ConvergenceWarning: Stoch
+astic Optimizer: Maximum iterations (5000) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+100%|██████████████████████████████████████████████████████████████████████████████████| 10/10 [09:11<00:00, 55.10s/it]
+optimal score =  0.9861111111111112
+optimal learning rate =  0.027825594022071243
+optimal lambda = 1e-10
+
+PS C:\python\project2> python .\1dEtaReg.py
+inputs = (n_inputs, pixel_width, pixel_height) = (1797, 8, 8)
+labels = (n_inputs) = (1797,)
+X = (n_inputs, n_features) = (1797, 64)
+Number of training images: 1437
+Number of test images: 360
+probabilities = (n_inputs, n_categories) = (1437, 10)
+probability that image 0 is in category 0,1,2,...,9 =
+[5.41511965e-04 2.17174962e-03 8.84355903e-03 1.44970586e-03
+ 1.10378326e-04 5.08318298e-09 2.03256632e-04 1.92507116e-03
+ 9.84443254e-01 3.11507992e-04]
+probabilities sum up to: 1.0
+predictions = (n_inputs) = (1437,)
+prediction for image 0: 8
+correct label for image 0: 6
+Old accuracy on training data: 0.1440501043841336
+optimal new training acc_score =  0.9965205288796103
+optimal learning rate =  0.000596845699512231
+optimal lambda = 3.290344562312671e-06
+---------------------
+Accuracy on test data:  0.9111111111111111
+
+PS C:\python\project2> python .\1eLogReg2.py
+inputs = (n_inputs, pixel_width, pixel_height) = (1797, 8, 8)
+labels = (n_inputs) = (1797,)
+100%|████████████████████████████████████████████████████████████████████| 10/10 [00:07<00:00,  1.29it/s]
+optimal score =  0.95
+optimal learning rate =  1.0
+optimal lambda = 1e-10
+[[27  0  0  0  0  0  0  0  0  0]
+ [ 0 31  0  0  0  0  1  0  3  0]
+ [ 0  0 34  2  0  0  0  0  0  0]
+ [ 0  0  0 29  0  0  0  0  0  0]
+ [ 0  0  0  0 30  0  0  0  0  0]
+ [ 0  0  0  0  0 39  0  0  0  1]
+ [ 0  1  0  0  0  0 43  0  0  0]
+ [ 0  1  0  0  1  0  0 37  0  0]
+ [ 0  2  1  0  0  0  0  0 35  1]
+ [ 0  0  0  1  0  1  0  0  2 37]]
+
+PS C:\python\project2> python 1esgdc2.py
+inputs = (n_inputs, pixel_width, pixel_height) = (1797, 8, 8)
+labels = (n_inputs) = (1797,)
+optimal score =  0.9666666666666667
+optimal learning rate =  0.0012689610031679222
+optimal lambda = 1e-10
+[[27  0  0  0  0  0  0  0  0  0]
+ [ 0 31  0  0  0  1  1  0  0  2]
+ [ 1  0 32  1  0  0  0  2  0  0]
+ [ 0  0  1 27  0  0  0  0  1  0]
+ [ 0  0  0  0 29  0  0  1  0  0]
+ [ 0  0  0  0  0 39  0  0  0  1]
+ [ 0  1  0  0  0  0 43  0  0  0]
+ [ 0  0  0  0  0  0  0 39  0  0]
+ [ 0  2  0  0  0  0  0  1 36  0]
+ [ 0  0  0  1  0  1  0  1  1 37]]
